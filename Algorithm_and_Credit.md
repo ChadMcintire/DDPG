@@ -21,7 +21,7 @@ $\textbf{Algorithm 1}$ Deep Deterministic Policy Gradient
     5. If $s\prime$ is terminal, reset environment state.
     6. $\textbf{if}$ it's time to update $\textbf{then}$
          1. $\textbf{for}$ however many updates $\textbf{do}$
-             1. Randomly sample a batch of transitions, $B = \{(s,a,r,s\prime,d)\} for \mathcal{D}$
+             1. Randomly sample a batch of transitions, $B = \{(s,a,r,s\prime,d)\} for &nbsp; \mathcal{D}$
              2. Compute targets<br />
                 $y(r, s\prime, d) = r + \gamma(1 - d) Q_{\phi_{targ}}(s\prime, \mu_{\theta_{targ}}(s\prime))$
              3. Update Q-function by one step of gradient descent using <br />
